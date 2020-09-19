@@ -2,6 +2,7 @@
 
 :root {
   --spacing: 2rem;
+  --transition: 0.2s ease;
 }
 
 html {
@@ -63,4 +64,15 @@ main {
   position: absolute;
   top: calc(var(--spacing) * 0.5);
   left: calc(var(--spacing) * 0.5);
+  opacity: 0;
+}
+
+.stack .card:hover .text {
+  opacity: 1;
+  transition: var(--transition);
+}
+
+.stack .card:hover img {
+  filter: blur(1px);
+  transition: var(--transition);
 }
