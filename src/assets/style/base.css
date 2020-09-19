@@ -19,7 +19,6 @@ html {
 
 body {
   padding: calc(var(--spacing) * 2);
-  background-color: bisque;
 }
 
 header {
@@ -39,10 +38,6 @@ header h1 {
   font-size: 1rem;
 }
 
-main {
-  background-color: gold;
-}
-
 .stack {
   padding: var(--spacing) 0;
   display: grid;
@@ -51,8 +46,9 @@ main {
 }
 
 .stack .card {
-  background-color: lavender;
   position: relative;
+  border-radius: 5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .stack .card img {
