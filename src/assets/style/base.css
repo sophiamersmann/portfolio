@@ -1,4 +1,8 @@
-@import '../../../node_modules/normalize.css/normalize.css';
+@import "../../../node_modules/normalize.css/normalize.css";
+
+:root {
+  --spacing: 2rem;
+}
 
 html {
   box-sizing: border-box;
@@ -10,4 +14,30 @@ html {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
+}
+
+body {
+  padding: calc(var(--spacing) * 2);
+  background-color: bisque;
+}
+
+header {
+  background-color: lavender;
+}
+
+header img {
+  width: 32px;
+  height: auto;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+header h1 {
+  display: inline;
+  vertical-align: middle;
+  font-size: 1rem;
+}
+
+main {
+  background-color: gold;
 }
