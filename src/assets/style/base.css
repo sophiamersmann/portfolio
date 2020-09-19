@@ -41,3 +41,26 @@ header h1 {
 main {
   background-color: gold;
 }
+
+.stack {
+  padding: var(--spacing) 0;
+  display: grid;
+  grid-gap: var(--spacing);
+  grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+}
+
+.stack .card {
+  background-color: lavender;
+  position: relative;
+}
+
+.stack .card img {
+  width: 100%;
+  height: auto;
+}
+
+.stack .card .text {
+  position: absolute;
+  top: calc(var(--spacing) * 0.5);
+  left: calc(var(--spacing) * 0.5);
+}
