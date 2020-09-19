@@ -1,12 +1,18 @@
 @import "../../../node_modules/normalize.css/normalize.css";
+@import "typo.css";
 
 :root {
   --spacing: 2rem;
   --transition: 0.2s ease;
+  --black: #212529;
+  --gray: #b8bfc6;
+  --light-gray: #f8f9fa;
 }
 
 html {
   box-sizing: border-box;
+  color: var(--black);
+  font-family: "Roboto", sans-serif;
 }
 
 *,
@@ -26,7 +32,7 @@ header {
 }
 
 header img {
-  width: 32px;
+  width: 64px;
   height: auto;
   border-radius: 50%;
   vertical-align: middle;
@@ -35,7 +41,10 @@ header img {
 header h1 {
   display: inline;
   vertical-align: middle;
-  font-size: 1rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+  margin-left: calc(var(--spacing) * 0.5);
 }
 
 .stack {
