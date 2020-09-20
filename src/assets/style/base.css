@@ -7,6 +7,7 @@
   --black: #212529;
   --gray: #b8bfc6;
   --light-gray: #f8f9fa;
+  --white: hsl(330 20% 90%);
   --accent: hsl(28, 96%, 58%);
   --accent-light: hsl(28, 96%, 95%);
 }
@@ -31,7 +32,12 @@ body {
 }
 
 header {
-  background-color: lavender;
+  display: flex;
+  align-items: center;
+}
+
+header .brand {
+  flex: 1 0 auto;
 }
 
 header img {
@@ -48,6 +54,41 @@ header h1 {
   font-size: 1.3rem;
   letter-spacing: 0.5px;
   margin-left: calc(var(--spacing) * 0.5);
+}
+
+header .social-media {
+  display: inline-flex;
+}
+
+header .social-media .brand-icon a {
+  display: grid;
+  grid: [stack] 1fr / [stack] 1fr;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+header .social-media .brand-icon a > * {
+  grid-area: stack;
+}
+
+header .social-media .brand-icon .blob {
+  fill: hsl(var(--hue, 290) 80% 55% / 80%);
+}
+
+header .social-media .brand-icon .blob:nth-child(2) {
+  fill: hsl(var(--hue, 310) 80% 55% / 80%);
+}
+
+header .social-media .brand-icon .icon {
+  fill: var(--white);
+  width: 50%;
+  height: 50%;
+}
+
+header .social-media .brand-icon .icon.mail {
+  width: 35%;
+  height: 35%;
 }
 
 .stack {
