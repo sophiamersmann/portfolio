@@ -135,13 +135,13 @@ header .social-media .brand-icon .icon.mail {
   font-weight: lighter;
 }
 
-.stack .card .badges {
+.stack .card .tags {
   font-size: 0.85rem;
   margin-top: calc(var(--spacing) * 0.25);
   line-height: 1.5;
 }
 
-.stack .card .badges span {
+.stack .card .tags span {
   background-color: lavender;
   padding: 2px 6px;
   border-radius: 10px;
@@ -159,7 +159,7 @@ header .social-media .brand-icon .icon.mail {
   transition: var(--transition);
 }
 
-.stack .card:hover .badges span {
+.stack .card:hover .tags span {
   background-color: var(--accent-light);
   transition: var(--transition);
 }
