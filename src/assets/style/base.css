@@ -8,8 +8,8 @@
   --gray: #b8bfc6;
   --light-gray: #f8f9fa;
   --white: hsl(330 20% 90%);
-  --accent: hsl(28, 96%, 58%);
-  --accent-light: hsl(28, 96%, 95%);
+  --accent-light: hsl(203 89% 90%);
+  --accent: hsl(203 89% 33%);
 }
 
 html {
@@ -47,6 +47,7 @@ header img {
   height: auto;
   border-radius: 50%;
   vertical-align: middle;
+  background-color: var(--accent-light);
 }
 
 header h1 {
@@ -142,7 +143,7 @@ header .social-media .brand-icon .icon.mail {
 }
 
 .stack .card .tags span {
-  background-color: lavender;
+  background-color: hsl(43 91% 88%);
   padding: 2px 6px;
   border-radius: 10px;
   white-space: nowrap;
