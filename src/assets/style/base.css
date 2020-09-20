@@ -78,3 +78,8 @@ header h1 {
   color: steelblue;
   transition: var(--transition);
 }
+
+a.no-style:is(:link, :visited, :hover, :active) {
+  color: inherit;
+  text-decoration: inherit;
+}
