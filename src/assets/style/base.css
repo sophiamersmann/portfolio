@@ -155,7 +155,8 @@ header .social-media .brand-icon .icon.mail {
   margin-top: calc(var(--spacing) * 0.25);
 }
 
-.stack .card:hover :is(.title, .subtitle) {
+.stack .card:hover .title,
+.stack .card:hover .subtitle {
   color: var(--accent);
   transition: var(--transition);
 }
@@ -165,7 +166,11 @@ header .social-media .brand-icon .icon.mail {
   transition: var(--transition);
 }
 
-a.no-style:is(:link, :visited, :hover, :active) {
+a.no-style,
+a.no-style:link,
+a.no-style:visited,
+a.no-style:hover,
+a.no-style:active {
   color: inherit;
   text-decoration: inherit;
 }
