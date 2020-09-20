@@ -31,6 +31,12 @@ body {
   padding: calc(var(--spacing) * 2);
 }
 
+@media only screen and (max-width: 576px) {
+  body {
+    padding: var(--spacing);
+  }
+}
+
 header {
   display: flex;
   align-items: center;
@@ -139,7 +145,7 @@ header .social-media .brand-icon .icon.mail {
 .stack .card .tags {
   font-size: 0.85rem;
   margin-top: calc(var(--spacing) * 0.25);
-  line-height: 1.5;
+  line-height: 1.5rem;
 }
 
 .stack .card .tags span {
