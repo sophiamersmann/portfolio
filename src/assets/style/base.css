@@ -13,6 +13,7 @@ html {
   box-sizing: border-box;
   color: var(--black);
   font-family: "Roboto", sans-serif;
+  font-size: 15px;
 }
 
 *,
@@ -54,30 +55,26 @@ header h1 {
   grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
 }
 
-.stack .card {
-  position: relative;
-  border-radius: 5px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-
 .stack .card img {
   width: 100%;
   height: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
 }
 
-.stack .card .text {
-  position: absolute;
-  top: calc(var(--spacing) * 0.5);
-  left: calc(var(--spacing) * 0.5);
-  opacity: 0;
+.stack .card .caption {
+  margin-top: calc(var(--spacing) * 0.25);
 }
 
-.stack .card:hover .text {
-  opacity: 1;
-  transition: var(--transition);
+.stack .card .title {
+  font-weight: bold;
 }
 
-.stack .card:hover img {
-  filter: blur(1px);
+.stack .card .subtitle {
+  font-weight: lighter;
+}
+
+.stack .card:hover .caption {
+  color: steelblue;
   transition: var(--transition);
 }
