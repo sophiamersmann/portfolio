@@ -72,12 +72,28 @@ header .social-media .brand-icon a > * {
   grid-area: stack;
 }
 
-header .social-media .brand-icon .blob {
-  fill: hsl(var(--hue, 290) 80% 55% / 80%);
+header .social-media .brand-icon .blob-back.blob-twitter {
+  fill: hsl(201 80% 74% / 80%);
 }
 
-header .social-media .brand-icon .blob:nth-child(2) {
-  fill: hsl(var(--hue, 310) 80% 55% / 80%);
+header .social-media .brand-icon .blob-front.blob-twitter {
+  fill: hsl(203 80% 55% / 80%);
+}
+
+header .social-media .brand-icon .blob-back.blob-github {
+  fill: hsl(210 12% 74% / 80%);
+}
+
+header .social-media .brand-icon .blob-front.blob-github {
+  fill: hsl(210 12% 16% / 80%);
+}
+
+header .social-media .brand-icon .blob-back.blob-mail {
+  fill: hsl(28 96% 74% / 80%);
+}
+
+header .social-media .brand-icon .blob-front.blob-mail {
+  fill: hsl(28 96% 58% / 80%);
 }
 
 header .social-media .brand-icon .icon {
