@@ -7,6 +7,8 @@
   --black: #212529;
   --gray: #b8bfc6;
   --light-gray: #f8f9fa;
+  --accent: hsl(28, 96%, 58%);
+  --accent-light: hsl(28, 96%, 95%);
 }
 
 html {
@@ -74,8 +76,30 @@ header h1 {
   font-weight: lighter;
 }
 
-.stack .card:hover .caption {
-  color: steelblue;
+.stack .card .badges {
+  font-size: 0.85rem;
+  margin-top: calc(var(--spacing) * 0.25);
+}
+
+.stack .card .badges span {
+  background-color: lavender;
+  padding: 2px 6px;
+  border-radius: 10px;
+}
+
+.stack .card time {
+  display: block;
+  font-size: 0.85rem;
+  margin-top: calc(var(--spacing) * 0.25);
+}
+
+.stack .card:hover :is(.title, .subtitle) {
+  color: var(--accent);
+  transition: var(--transition);
+}
+
+.stack .card:hover .badges span {
+  background-color: var(--accent-light);
   transition: var(--transition);
 }
 
