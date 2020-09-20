@@ -34,6 +34,8 @@ body {
 header {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
 header .brand {
@@ -41,7 +43,7 @@ header .brand {
 }
 
 header img {
-  width: 64px;
+  width: 4rem;
   height: auto;
   border-radius: 50%;
   vertical-align: middle;
@@ -64,8 +66,8 @@ header .social-media .brand-icon a {
   display: grid;
   grid: [stack] 1fr / [stack] 1fr;
   place-items: center;
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 header .social-media .brand-icon a > * {
