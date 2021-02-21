@@ -5,7 +5,7 @@ const cards = [
     tags: ['data visualisation', 'design & development', 'self-initiated', 'd3.js', 'Vue.js', 'politics'],
     date: new Date(2021, 0, 25),
     url: 'https://sophiamersmann.github.io/kleine-anfragen-visualised/',
-    imageUrl: 'img/card-kleine-anfragen-1024x768.png',
+    imageUrl: 'cards/card-kleine-anfragen-1024x768.png',
     githubUrl: 'https://github.com/sophiamersmann/kleine-anfragen-visualised'
   },
   {
@@ -14,7 +14,7 @@ const cards = [
     tags: ['design & development', 'self-initiated', 'Vue.js', 'games'],
     date: new Date(2020, 9, 1),
     url: 'https://sophiamersmann.github.io/minesweeper/',
-    imageUrl: 'img/card-minesweeper-1024x768.png',
+    imageUrl: 'cards/card-minesweeper-1024x768.png',
     githubUrl: 'https://github.com/sophiamersmann/minesweeper'
   },
   {
@@ -23,7 +23,7 @@ const cards = [
     tags: ['data visualisation', 'data analysis', 'design & development', 'self-initiated', 'd3.js', 'politics'],
     date: new Date(2020, 7, 1),
     url: 'https://sophiamersmann.github.io/newcomer-parties/',
-    imageUrl: 'img/card-newcomer-parties-1024x768.png',
+    imageUrl: 'cards/card-newcomer-parties-1024x768.png',
     githubUrl: 'https://github.com/sophiamersmann/newcomer-parties'
   },
   {
@@ -32,7 +32,7 @@ const cards = [
     tags: ['data visualisation', 'data collection & analysis', 'design & development', 'self-initiated', 'd3.js', 'corona'],
     date: new Date(2020, 5, 1),
     url: 'https://sophiamersmann.github.io/rummy-calendar/',
-    imageUrl: 'img/card-rummy-calendar-1024x768.png',
+    imageUrl: 'cards/card-rummy-calendar-1024x768.png',
     githubUrl: 'https://github.com/sophiamersmann/rummy-calendar'
   },
   {
@@ -41,7 +41,7 @@ const cards = [
     tags: ['webserver', 'data visualisation', 'Django', 'd3.js', 'bioinformatics', 'Imperical College London'],
     date: new Date(2019, 8, 1),
     url: 'https://proteinlens.io/',
-    imageUrl: 'img/card-proteinlens-1024x768.png',
+    imageUrl: 'cards/card-proteinlens-1024x768.png',
     githubUrl: null,
   },
   {
@@ -50,7 +50,7 @@ const cards = [
     tags: ['research', 'master thesis', 'data visualisation', 'd3.js', 'Imperical College London'],
     date: new Date(2020, 8, 1),
     url: 'https://sophiamersmann.github.io/master-thesis/',
-    imageUrl: 'img/card-master-thesis-1024x768.png',
+    imageUrl: 'cards/card-master-thesis-1024x768.png',
     githubUrl: 'https://github.com/sophiamersmann/master-thesis'
   }
 ];
