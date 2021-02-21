@@ -9,3 +9,33 @@
   </div>
   <SocialMedia />
 </header>
+
+<style>
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+
+  .brand {
+    flex: 1 0 auto;
+  }
+
+  img {
+    width: 4rem;
+    height: auto;
+    border-radius: 50%;
+    vertical-align: middle;
+    background-color: var(--accent-light);
+  }
+
+  h1 {
+    display: inline;
+    vertical-align: middle;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+    margin-left: calc(var(--spacing) * 0.5);
+  }
+</style>
