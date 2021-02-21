@@ -1,9 +1,9 @@
-@import "normalize.css";
-@import "typo.css";
+/* @import "normalize.css";
+@import "typo.css"; */
 
 :root {
   --spacing: 2rem;
-  --transition: 0.2s ease;
+  --transition: all 0.2s ease;
   --black: #212529;
   --gray: #b8bfc6;
   --light-gray: #f8f9fa;
@@ -127,7 +127,12 @@ header .social-media .brand-icon .icon.mail {
   width: 100%;
   height: auto;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  border-radius: 5px;
+  border-radius: 12px;
+}
+
+.stack .card img:hover {
+  transform: translateY(-6px);
+  transition: transform 0.2s ease-out;
 }
 
 .stack .card .caption {
@@ -161,13 +166,13 @@ header .social-media .brand-icon .icon.mail {
   margin-top: calc(var(--spacing) * 0.25);
 }
 
-.stack .card:hover .title,
-.stack .card:hover .subtitle {
+.stack .top:hover .title,
+.stack .top:hover .subtitle {
   color: var(--accent);
   transition: var(--transition);
 }
 
-.stack .card:hover .tags span {
+.stack .top:hover .tags span {
   background-color: var(--accent-light);
   transition: var(--transition);
 }
