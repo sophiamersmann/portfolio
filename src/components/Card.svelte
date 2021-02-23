@@ -74,7 +74,7 @@
   }
 
   .title {
-    font-weight: bold;
+    font-weight: 500;
   }
 
   .subtitle {

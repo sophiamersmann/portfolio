@@ -22,6 +22,6 @@
     border-radius: 20px;
     display: inline-block;
     white-space: nowrap;
-    margin: 1px;
+    margin: 1px 2px 1px 0;
   }
 </style>
