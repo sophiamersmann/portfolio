@@ -1,5 +1,14 @@
 const cards = [
   {
+    title: 'Switching the light off',
+    subtitle: 'Academic journals\' impact factors without their star articles',
+    tags: ['data visualisation', 'design & development', 'self-initiated', 'd3.js', 'svelte.js'],
+    date: new Date(2021, 1, 23),
+    url: 'https://sophiamersmann.github.io/impact-factors/',
+    imageUrl: 'cards/card-impact-factors-1024x768.png',
+    githubUrl: 'https://github.com/sophiamersmann/impact-factors'
+  },
+  {
     title: 'kleineAnfragen visualisiert',
     subtitle: 'Visualisierung kleiner und großer Anfragen aus dem Bundestag und aus den Landesparlamenten (Daten von kleineAnfragen.de)',
     tags: ['data visualisation', 'design & development', 'self-initiated', 'd3.js', 'Vue.js', 'politics'],
