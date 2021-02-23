@@ -23,7 +23,7 @@
 
 <div class="card">
   <LinkWrapper {url}>
-    <img src={imageUrl} alt={title} width="1024" height="768" />
+    <img src={imageUrl} alt={title} width="512" height="384" />
   </LinkWrapper>
   <div class="caption">
     <div class="top">

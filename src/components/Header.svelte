@@ -4,7 +4,7 @@
 
 <header>
   <div class="brand">
-    <img src="memoji-421x421.png" alt="Memoji" width="421" height="421" />
+    <img src="memoji.webp" alt="Memoji" width="120" height="120" />
     <h1>Sophia Mersmann</h1>
   </div>
   <SocialMedia />
