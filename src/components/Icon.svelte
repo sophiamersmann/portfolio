@@ -1,7 +1,7 @@
 <script>
-	export let type;
+  export let type;
 
-	import icons from '../inputs/icons';
+  import icons from '../inputs/icons';
 </script>
 
 <svg class="icon {type}" viewbox="0 0 512 512">
@@ -9,9 +9,9 @@
 </svg>
 
 <style>
-	.icon {
+  .icon {
     fill: white;
-		opacity: 0.9;
+    opacity: 0.9;
     width: 50%;
     height: 50%;
   }

@@ -33,7 +33,7 @@
   h1 {
     display: inline;
     vertical-align: middle;
-    font-family: "Space Grotesk", sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     font-size: 1.3rem;
     letter-spacing: 0.5px;
     margin-left: calc(var(--spacing) * 0.5);

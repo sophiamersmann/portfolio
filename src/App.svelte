@@ -7,4 +7,3 @@
 <main>
   <CardStack />
 </main>
-
