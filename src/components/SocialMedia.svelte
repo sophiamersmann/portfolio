@@ -3,7 +3,11 @@
   import Icon from './Icon.svelte';
   import LinkWrapper from './LinkWrapper.svelte';
 
-  import social from '../inputs/social';
+  const social = [
+    { name: 'mail', url: 'mailto:sophia.mersmann.blog@gmail.com' },
+    { name: 'twitter', url: 'https://twitter.com/sophiamersmann' },
+    { name: 'github', url: 'https://github.com/sophiamersmann' },
+  ];
 </script>
 
 <div class="social-media">
