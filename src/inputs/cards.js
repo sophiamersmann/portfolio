@@ -1,5 +1,45 @@
 const cards = [
   {
+    title:
+      'Charlottenburg-Wilmersdorf veröffentlicht Schätzungen statt Wahlergebnisse',
+    subtitle: '',
+    tags: ['data journalism', 'rbb|24', 'Wahlen 2021'],
+    date: new Date(2021, 8, 30),
+    url: 'https://www.rbb24.de/politik/wahl/abgeordnetenhaus/agh-2021/ergebnisse-bvv/berlin-wahl-bezirksverordnetenversammlung-charlottenburg-wilmersdorf-bvv.html',
+    imageUrl: 'cards/card-rbb.png',
+  },
+  {
+    title: 'Auffällig viele ungültige Stimmen in 99 Berliner Wahlbezirken',
+    subtitle: '',
+    tags: ['data journalism', 'rbb|24', 'Wahlen 2021'],
+    date: new Date(2021, 8, 29),
+    url: 'https://www.rbb24.de/politik/wahl/abgeordnetenhaus/agh-2021/beitraege/berlin-wahl-unregelmaessigkeiten-wahlfehler-falsche-stimmzettel.html',
+    imageUrl: 'cards/card-rbb.png',
+  },
+  {
+    title: 'Welche Parteien die treuesten Wähler und Wählerinnen haben',
+    subtitle: '',
+    tags: ['data visualisation', 'ternary charts', 'rbb|24', 'react', 'd3.js'],
+    date: new Date(2021, 8, 23),
+    url: 'https://www.rbb24.de/politik/wahl/abgeordnetenhaus/agh-2021/beitraege/berliner-superwahltag-2021-bundestag-abgeordnetenhaus-bezirksverordnetenversammlung-volksentscheid-stimmensplitting.html',
+    imageUrl: 'cards/card-rbb.png',
+  },
+  {
+    title: 'Wie Mütter und Väter zwei unterschiedliche Pandemien erlebten',
+    subtitle: '',
+    tags: [
+      'data visualisation',
+      'storytelling',
+      'nominiert für den Reporter:innenpreis 2021',
+      'rbb|24',
+      'react',
+      'd3.js',
+    ],
+    date: new Date(2021, 8, 8),
+    url: 'https://www.rbb24.de/politik/thema/corona/beitraege/2021/09/lockdown-auswirkungen-gender-care-gap-muetter-vaeter-familie.html',
+    imageUrl: 'cards/card-rbb.png',
+  },
+  {
     title: 'Switching the light off',
     subtitle: "Academic journals' impact factors without their star articles",
     tags: [
