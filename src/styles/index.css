@@ -1,0 +1,27 @@
+@import './variables';
+
+html {
+  box-sizing: border-box;
+  color: var(--black);
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  line-height: 1.15;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: calc(var(--spacing) * 2);
+}
+
+@media only screen and (max-width: 576px) {
+  body {
+    padding: var(--spacing);
+  }
+}

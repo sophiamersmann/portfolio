@@ -1,0 +1,31 @@
+---
+import blobs from '../inputs/blobs';
+
+const { icon, position } = Astro.props;
+const key = [icon, position].join('-');
+---
+
+<svg class={`blob blob-${position} blob-${icon}`} viewBox="0 0 200 200">
+  <path d={blobs.get(key)} transform="translate(100 100)"></path>
+</svg>
+
+<style>
+  .blob-back.blob-twitter {
+    fill: hsl(201 80% 74% / 80%);
+  }
+  .blob-front.blob-twitter {
+    fill: hsl(203 80% 55% / 80%);
+  }
+  .blob-back.blob-github {
+    fill: hsl(210 12% 74% / 80%);
+  }
+  .blob-front.blob-github {
+    fill: hsl(210 12% 16% / 80%);
+  }
+  .blob-back.blob-mail {
+    fill: hsl(43 91% 74% / 80%);
+  }
+  .blob-front.blob-mail {
+    fill: hsl(43 91% 52% / 80%);
+  }
+</style>

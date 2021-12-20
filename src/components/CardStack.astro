@@ -1,0 +1,17 @@
+---
+import Card from './Card.astro';
+import cards from '../inputs/cards.js';
+---
+
+<div class="stack">
+  {cards.map((card) => <Card {...card} />)}
+</div>
+
+<style>
+  .stack {
+    padding: var(--spacing) 0;
+    display: grid;
+    grid-gap: var(--spacing);
+    grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+  }
+</style>

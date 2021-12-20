@@ -1,0 +1,113 @@
+---
+import Icon from './Icon.astro';
+import Tags from './Tags.astro';
+
+const { title, subtitle, tags, date, url, imageUrl, githubUrl } = Astro.props;
+---
+
+<div class="card">
+  <a target="_blank" href={url}>
+    <img src={imageUrl} alt={title} width="512" height="384" />
+  </a>
+  <div class="caption">
+    <div class="top">
+      <a target="_blank" href={url}>
+        <span class="title">{title}</span>
+        <span class="subtitle">{subtitle}</span>
+        <Tags {tags} />
+      </a>
+    </div>
+    <div class="bottom">
+      <time>
+        {new Date(date).toLocaleDateString('en-UK', {
+          month: 'short',
+          year: 'numeric',
+        })}
+      </time>
+      {githubUrl && (
+        <span class="separator">/</span>
+        <a target="_blank" href={githubUrl}>
+          <div class="icon-wrapper">
+            Source
+            <Icon type="github" />
+          </div>
+        </a>
+      )}
+    </div>
+  </div>
+</div>
+
+<style>
+  img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    transition: all calc(var(--transition-duration) / 2);
+  }
+
+  img:hover {
+    transform: translateY(-6px);
+    transition: all var(--transition-duration) ease-out;
+  }
+
+  .caption {
+    margin-top: calc(var(--spacing) * 0.25);
+  }
+
+  .separator {
+    color: var(--primary);
+    font-weight: bold;
+  }
+
+  .title {
+    font-weight: 500;
+  }
+
+  .subtitle {
+    font-weight: 300;
+  }
+
+  .top:hover {
+    cursor: pointer;
+  }
+
+  .top:hover .title {
+    text-decoration: underline;
+    text-decoration-color: var(--primary);
+    text-decoration-thickness: 3px;
+  }
+
+  .bottom {
+    font-size: 0.85rem;
+    margin-top: calc(var(--spacing) * 0.25);
+  }
+
+  .icon-wrapper {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .icon-wrapper:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--primary);
+    text-decoration-thickness: 2px;
+  }
+
+  .icon-wrapper :global(.icon) {
+    fill: var(--black);
+    opacity: 1;
+    height: 1.35em;
+    width: 1.35em;
+    margin-left: 2px;
+  }
+
+  a,
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    color: inherit;
+    text-decoration: inherit;
+  }
+</style>

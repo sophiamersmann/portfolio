@@ -1,22 +1,70 @@
 ---
-// Component imports and setup JavaScript go here!
+import Header from '../components/Header.astro';
+import CardStack from '../components/CardStack.astro';
 ---
 
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" href="/favicon.png" />
 
-<head>
-	<meta charset="utf-8" />
-	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-	<meta name="viewport" content="width=device-width" />
-	<title>Welcome to Astro</title>
-	<style>
-		/* scoped CSS styles go here: */
-		/* h1 { ... } */
-	</style>
-</head>
+    <title>Sophia Mersmann - Portfolio</title>
 
-<body>
-	<h1>Welcome to <a href="https://astro.build/">Astro</a></h1>
-</body>
+    <meta name="author" content="Sophia Mersmann" />
+    <meta name="title" content="Sophia Mersmann - Portfolio" />
+    <meta
+      name="description"
+      content="A collection of data visualisation projects"
+    />
 
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://sophiamersmann.github.io/portfolio/"
+    />
+    <meta property="og:title" content="Sophia Mersmann - Portfolio" />
+    <meta
+      property="og:description"
+      content="A collection of data visualisation projects"
+    />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/sophiamersmann/portfolio/master/public/social-media-preview-1400x700.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://sophiamersmann.github.io/portfolio/"
+    />
+    <meta property="twitter:title" content="Sophia Mersmann - Portfolio" />
+    <meta
+      property="twitter:description"
+      content="A collection of data visualisation projects"
+    />
+    <meta
+      property="twitter:image"
+      content="https://raw.githubusercontent.com/sophiamersmann/portfolio/master/public/social-media-preview-1400x700.png"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href={Astro.resolve('../styles/index.css')} />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Space+Grotesk:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <Header />
+    <main>
+      <CardStack />
+    </main>
+  </body>
 </html>
