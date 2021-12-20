@@ -1,0 +1,11 @@
+:root {
+  --spacing: 2rem;
+  --transition-duration: 0.2s;
+  --black: #212529;
+  --gray: #b8bfc6;
+  --light-gray: #f8f9fa;
+  --primary: hsl(41 88% 57%);
+  --primary-light: hsl(43 91% 88%);
+  --accent-light: hsl(203 89% 90%);
+  --accent: hsl(203 89% 33%);
+}

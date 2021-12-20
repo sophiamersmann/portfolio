@@ -1,8 +1,15 @@
-<!DOCTYPE html>
+---
+import Header from '../components/Header.astro';
+import CardStack from '../components/CardStack.astro';
+---
+
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" href="/favicon.png" />
+
+    <title>Sophia Mersmann - Portfolio</title>
 
     <meta name="author" content="Sophia Mersmann" />
     <meta name="title" content="Sophia Mersmann - Portfolio" />
@@ -10,8 +17,6 @@
       name="description"
       content="A collection of data visualisation projects"
     />
-
-    <title>Sophia Mersmann - Portfolio</title>
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -45,25 +50,21 @@
       content="https://raw.githubusercontent.com/sophiamersmann/portfolio/master/public/social-media-preview-1400x700.png"
     />
 
-    <!-- preload images on the top -->
-    <link rel="preload" as="image" href="memoji.webp" />
-    <link rel="preload" as="image" href="cards/card-impact-factors.webp" />
-    <link rel="preload" as="image" href="cards/card-kleine-anfragen.webp" />
-    <link rel="preload" as="image" href="cards/card-minesweeper.webp" />
-    <link rel="preload" as="image" href="cards/card-newcomer-parties.webp" />
+    <!-- Styles -->
+    <link rel="stylesheet" href={Astro.resolve('../styles/index.css')} />
 
-    <link rel="icon" href="favicon.png" />
-    <link rel="stylesheet" href="global.css" />
-    <link rel="stylesheet" href="build/bundle.css" />
-
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Space+Grotesk:wght@700&display=swap"
       rel="stylesheet"
     />
-
-    <script defer src="build/bundle.js"></script>
   </head>
 
-  <body></body>
+  <body>
+    <Header />
+    <main>
+      <CardStack />
+    </main>
+  </body>
 </html>
