@@ -1,51 +1,38 @@
-<script>
-  import LinkWrapper from './LinkWrapper.svelte';
-  import Tags from './Tags.svelte';
-  import Icon from './Icon.svelte';
+---
+import Icon from './Icon.astro';
+import Tags from './Tags.astro';
 
-  export let title;
-  export let subtitle;
-  export let tags = [];
-  export let date = new Date();
-  export let url;
-  export let imageUrl;
-  export let githubUrl;
-
-  const dateOptions = { month: 'short', year: 'numeric' };
-
-  const pad = (num) => num.toString().padStart(2, 0);
-  const machineDate = [
-    date.getFullYear(),
-    pad(date.getMonth() + 1),
-    pad(date.getDate()),
-  ].join('-');
-</script>
+const { title, subtitle, tags, date, url, imageUrl, githubUrl } = Astro.props;
+---
 
 <div class="card">
-  <LinkWrapper {url}>
+  <a target="_blank" href={url}>
     <img src={imageUrl} alt={title} width="512" height="384" />
-  </LinkWrapper>
+  </a>
   <div class="caption">
     <div class="top">
-      <LinkWrapper {url}>
+      <a target="_blank" href={url}>
         <span class="title">{title}</span>
         <span class="subtitle">{subtitle}</span>
         <Tags {tags} />
-      </LinkWrapper>
+      </a>
     </div>
     <div class="bottom">
-      <time datetime={machineDate}>
-        {date.toLocaleDateString('en-UK', dateOptions)}
+      <time>
+        {new Date(date).toLocaleDateString('en-UK', {
+          month: 'short',
+          year: 'numeric',
+        })}
       </time>
-      {#if githubUrl}
+      {githubUrl && (
         <span class="separator">/</span>
-        <LinkWrapper url={githubUrl}>
+        <a target="_blank" href={githubUrl}>
           <div class="icon-wrapper">
             Source
             <Icon type="github" />
           </div>
-        </LinkWrapper>
-      {/if}
+        </a>
+      )}
     </div>
   </div>
 </div>
@@ -113,5 +100,14 @@
     height: 1.35em;
     width: 1.35em;
     margin-left: 2px;
+  }
+
+  a,
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    color: inherit;
+    text-decoration: inherit;
   }
 </style>

@@ -1,13 +1,10 @@
-<script>
-  import Card from './Card.svelte';
-
-  import cards from '../inputs/cards';
-</script>
+---
+import Card from './Card.astro';
+import cards from '../inputs/cards.js';
+---
 
 <div class="stack">
-  {#each cards as card (card.title)}
-    <Card {...card} />
-  {/each}
+  {cards.map((card) => <Card {...card} />)}
 </div>
 
 <style>

@@ -1,12 +1,14 @@
-<script>
-  export let tags = [];
-</script>
+---
+const { tags } = Astro.props;
+---
 
-<div class="tags">
-  {#each tags as tag}
-    <span>{tag}</span>
-  {/each}
-</div>
+{tags && (
+  <div class="tags">
+    {tags.map((tag) => (
+      <span>{tag}</span>
+    ))}
+  </div>
+)}
 
 <style>
   .tags {
