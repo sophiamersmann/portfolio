@@ -3,16 +3,20 @@ import Blob from './Blob.astro';
 import Icon from './Icon.astro';
 
 const socials = [
-  { name: 'mail', url: 'mailto:sophia.mersmann.blog@gmail.com' },
-  { name: 'twitter', url: 'https://twitter.com/sophiamersmann' },
-  { name: 'github', url: 'https://github.com/sophiamersmann' },
+  { name: 'mail', url: 'mailto:sophia.mersmann.blog@gmail.com', label: 'Mail' },
+  {
+    name: 'twitter',
+    url: 'https://twitter.com/sophiamersmann',
+    label: 'Twitter',
+  },
+  { name: 'github', url: 'https://github.com/sophiamersmann', label: 'GitHub' },
 ];
 ---
 
 <div class="social-media">
-  {socials.map(({ name, url }) => (
+  {socials.map(({ name, url, label }) => (
     <div class="brand-icon">
-      <a target="_blank" href={url}>
+      <a target="_blank" href={url} aria-label={label}>
         <Blob icon={name} position="back" />
         <Blob icon={name} position="front" />
         <Icon type={name} />

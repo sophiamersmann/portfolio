@@ -6,6 +6,7 @@ const cards = [
     date: '2021-09-30',
     url: 'https://www.rbb24.de/politik/wahl/abgeordnetenhaus/agh-2021/ergebnisse-bvv/berlin-wahl-bezirksverordnetenversammlung-charlottenburg-wilmersdorf-bvv.html',
     imageUrl: 'assets/card-rbb.png',
+    imageAlt: 'rbb|24 logo',
   },
   {
     title: 'Auffällig viele ungültige Stimmen in 99 Berliner Wahlbezirken',
@@ -13,6 +14,7 @@ const cards = [
     date: '2021-09-29',
     url: 'https://www.rbb24.de/politik/wahl/abgeordnetenhaus/agh-2021/beitraege/berlin-wahl-unregelmaessigkeiten-wahlfehler-falsche-stimmzettel.html',
     imageUrl: 'assets/card-rbb.png',
+    imageAlt: 'rbb|24 logo',
   },
   {
     title: 'Welche Parteien die treuesten Wähler und Wählerinnen haben',
@@ -20,6 +22,7 @@ const cards = [
     date: '2021-09-23',
     url: 'https://www.rbb24.de/politik/wahl/abgeordnetenhaus/agh-2021/beitraege/berliner-superwahltag-2021-bundestag-abgeordnetenhaus-bezirksverordnetenversammlung-volksentscheid-stimmensplitting.html',
     imageUrl: 'assets/card-rbb.png',
+    imageAlt: 'rbb|24 logo',
   },
   {
     title: 'Wie Mütter und Väter zwei unterschiedliche Pandemien erlebten',
@@ -34,6 +37,7 @@ const cards = [
     date: '2021-09-08',
     url: 'https://www.rbb24.de/politik/thema/corona/beitraege/2021/09/lockdown-auswirkungen-gender-care-gap-muetter-vaeter-familie.html',
     imageUrl: 'assets/card-rbb.png',
+    imageAlt: 'rbb|24 logo',
   },
   {
     title: 'Switching the light off',
@@ -49,6 +53,7 @@ const cards = [
     url: 'https://sophiamersmann.github.io/impact-factors/',
     imageUrl: 'assets/card-impact-factors.webp',
     githubUrl: 'https://github.com/sophiamersmann/impact-factors',
+    imageAlt: 'Screenshot of the visualisation that shows stars at night',
   },
   {
     title: 'kleineAnfragen visualisiert',
@@ -66,6 +71,8 @@ const cards = [
     url: 'https://sophiamersmann.github.io/kleine-anfragen-visualised/',
     imageUrl: 'assets/card-kleine-anfragen.webp',
     githubUrl: 'https://github.com/sophiamersmann/kleine-anfragen-visualised',
+    imageAlt:
+      'Screenshot of the visualisation that shows the seat distribution of a parliament',
   },
   {
     title: 'Minesweeper',
@@ -75,6 +82,7 @@ const cards = [
     url: 'https://sophiamersmann.github.io/minesweeper/',
     imageUrl: 'assets/card-minesweeper.webp',
     githubUrl: 'https://github.com/sophiamersmann/minesweeper',
+    imageAlt: 'Screenshot of the Minesweeper game',
   },
   {
     title: 'Newcomer Parties To European Parliaments',
@@ -92,6 +100,7 @@ const cards = [
     url: 'https://sophiamersmann.github.io/newcomer-parties/',
     imageUrl: 'assets/card-newcomer-parties.webp',
     githubUrl: 'https://github.com/sophiamersmann/newcomer-parties',
+    imageAlt: 'Screenshot of the visualisation that shows a beeswarm plot',
   },
   {
     title: 'Rummy Calendar',
@@ -108,6 +117,7 @@ const cards = [
     url: 'https://sophiamersmann.github.io/rummy-calendar/',
     imageUrl: 'assets/card-rummy-calendar.webp',
     githubUrl: 'https://github.com/sophiamersmann/rummy-calendar',
+    imageAlt: 'Screenshot of the visualisation that shows a colorful calendar',
   },
   {
     title: 'ProteinLens',
@@ -124,6 +134,7 @@ const cards = [
     date: '2019-09-01',
     url: 'https://proteinlens.io/',
     imageUrl: 'assets/card-proteinlens.webp',
+    imageAlt: 'Screenshot of a three-dimensional protein structure',
   },
   {
     title:
@@ -140,6 +151,7 @@ const cards = [
     url: 'https://sophiamersmann.github.io/master-thesis/',
     imageUrl: 'assets/card-master-thesis.webp',
     githubUrl: 'https://github.com/sophiamersmann/master-thesis',
+    imageAlt: 'Screenshot of a chart',
   },
 ];
 

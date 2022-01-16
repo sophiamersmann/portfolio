@@ -2,12 +2,13 @@
 import Icon from './Icon.astro';
 import Tags from './Tags.astro';
 
-const { title, subtitle, tags, date, url, imageUrl, githubUrl } = Astro.props;
+const { title, subtitle, tags, date, url, imageUrl, imageAlt, githubUrl } =
+  Astro.props;
 ---
 
 <div class="card">
-  <a target="_blank" href={url}>
-    <img src={imageUrl} alt={title} width="512" height="384" />
+  <a target="_blank" href={url} aria-label={title}>
+    <img src={imageUrl} alt={imageAlt} width="512" height="384" />
   </a>
   <div class="caption">
     <div class="top">
